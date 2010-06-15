@@ -146,3 +146,9 @@ function! IndTxtObj(inner)
 endfunction
 
 vmap <Leader>g :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
+
+" < allows left cursor / h to move from beginning of one line to end of previous line when in normal or visual mode
+" > allows right cursor / l to move from end of one line to beginning of next line when in normal or visual mode
+" [ allows left cursor to move from beginning of one line to end of previous line when in insert or replace mode
+" ] allows right cursor to move from end of one line to beginning of next line when in insert or replace mode
+:set whichwrap+=<>[]
