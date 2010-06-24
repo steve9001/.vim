@@ -5,6 +5,11 @@ These are my opinionated .vim settings.  I clone it to my home directory, then:
     $ ln -s ~/.vim/.vimrc ~/.vimrc
     $ ln -s ~/.vim/.gvimrc ~/.gvimrc
 
+## Uses submodules to manage plugins
+
+    $ cd ~/.vim
+    $ git submodule add <git-path-to-plugin> bundle/<plugin-name>
+
 ## Plugins included:
 
 * http://github.com/mileszs/ack.vim
