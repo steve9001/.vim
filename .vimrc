@@ -11,7 +11,7 @@ filetype plugin indent on
 let mapleader = ","
 
 " Wrapping
-set nowrap
+set wrap
 
 " Highlight the line the cursor is on
 set cursorline
@@ -176,4 +176,7 @@ inoremap <c-tab> <c-r>=InsertTabWrapper ("startkey")<CR>
 
 " Press F4 to toggle highlighting on/off.
 :noremap hs :set hls!<CR>
+
+" Always display the status line
+set laststatus=2
 
