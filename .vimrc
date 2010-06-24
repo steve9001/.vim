@@ -171,3 +171,9 @@ inoremap <c-tab> <c-r>=InsertTabWrapper ("startkey")<CR>
 " ] allows right cursor to move from end of one line to beginning of next line when in insert or replace mode
 :set whichwrap+=<>[]
 
+" Spell checking
+:noremap sc :set spell!<CR>
+
+" Press F4 to toggle highlighting on/off.
+:noremap hs :set hls!<CR>
+
