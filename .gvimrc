@@ -1,6 +1,7 @@
 " I Like big fonts and I can't deny...
-set enc=utf-8 termencoding=macroman gfn=Monaco:h16
-set antialias
+set enc=utf-8 
+set termencoding=macroman 
+set gfn=Monaco:h16
 
 " Fullscreen mode
 set fuoptions=maxvert,maxhorz
