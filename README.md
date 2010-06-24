@@ -1,6 +1,9 @@
 # .vim
 
-These are my opinionated .vim settings.
+These are my opinionated .vim settings.  I clone it to my home directory, then:
+
+    $ ln -s ~/.vim/.vimrc ~/.vimrc
+    $ ln -s ~/.vim/.gvimrc ~/.gvimrc
 
 ## Plugins included:
 
