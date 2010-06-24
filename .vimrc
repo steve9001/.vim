@@ -145,10 +145,29 @@ function! IndTxtObj(inner)
   normal! $
 endfunction
 
+" git blame
 vmap <Leader>g :<C-U>!git blame <C-R>=expand("%:p") <CR> \| sed -n <C-R>=line("'<") <CR>,<C-R>=line("'>") <CR>p <CR>
+
+" Remap TAB to keyword completion
+function! InsertTabWrapper(direction)
+  let col = col('.') - 1
+  if !col || getline('.')[col - 1] !~ '\k'
+    return "\<tab>"
+  elseif "backward" == a:direction
+    return "\<c-p>"
+  elseif "forward" == a:direction
+    return "\<c-n>"
+  else
+    return "\<c-x>\<c-k>"
+  endif
+endfunction
+inoremap <tab> <c-r>=InsertTabWrapper ("forward")<CR>
+inoremap <s-tab> <c-r>=InsertTabWrapper ("backward")<CR>
+inoremap <c-tab> <c-r>=InsertTabWrapper ("startkey")<CR>
 
 " < allows left cursor / h to move from beginning of one line to end of previous line when in normal or visual mode
 " > allows right cursor / l to move from end of one line to beginning of next line when in normal or visual mode
 " [ allows left cursor to move from beginning of one line to end of previous line when in insert or replace mode
 " ] allows right cursor to move from end of one line to beginning of next line when in insert or replace mode
 :set whichwrap+=<>[]
+
