@@ -40,9 +40,10 @@ set splitright
 " Strip trailing whitespace
 "autocmd BufWritePre * :%s/\s\+$//e
 
-" recognize Capfile, Gemfile
+" recognize Capfile, Gemfile, treetop
 autocmd BufRead,BufNewFile Capfile set filetype=ruby
 autocmd BufRead,BufNewFile Gemfile set filetype=ruby
+autocmd BufRead,BufNewFile *.treetop set filetype=treetop
 
 " Reveal current file in tree
 map <leader>R :NERDTreeFind<CR>
