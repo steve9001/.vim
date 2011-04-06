@@ -1,6 +1,8 @@
 " No Vi Compatibility
 set nocompatible
 
+syntax on
+
 " Load bundles
 call pathogen#runtime_append_all_bundles()
 
