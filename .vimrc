@@ -180,7 +180,7 @@ inoremap <c-tab> <c-r>=InsertTabWrapper ("startkey")<CR>
 :noremap sc :set spell!<CR>
 
 " Press F4 to toggle highlighting on/off.
-:noremap hs :set hls!<CR>
+noremap <leader>hs :set hls!<CR>
 
 " Always display the status line
 set laststatus=2

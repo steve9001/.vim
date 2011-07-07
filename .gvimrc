@@ -8,10 +8,8 @@ elseif s:os_type =~ "^Linux"
   set gfn=Monospace\ 14
 endif
 
-" Theme
-let g:solarized_degrade="1"
-set background=dark
-colorscheme solarized
+set bg=dark
+colorscheme jellybeans
 
 " Make Save leave edit mode
 " macmenu File.Save  key=<nop>
