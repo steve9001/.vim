@@ -2,11 +2,12 @@
 set enc=utf-8 
 set termencoding=macroman 
 
-" for OSX
-set gfn=Monaco:h16
-
-" for Ubuntu
-"set gfn=Monospace\ 14
+let s:os_type = system("uname")
+if s:os_type =~ "^Darwin"
+ set gfn=Monaco:h16
+elseif s:os_type =~ "^Linux"
+ set gfn=Monospace\ 14
+endif
 
 " Theme
 set bg=dark
