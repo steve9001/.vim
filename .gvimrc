@@ -1,6 +1,4 @@
-" I Like big fonts and I can't deny...
 set enc=utf-8 
-set termencoding=macroman 
 
 let s:os_type = system("uname")
 if s:os_type =~ "^Darwin"
@@ -11,8 +9,9 @@ elseif s:os_type =~ "^Linux"
 endif
 
 " Theme
-set bg=dark
-colorscheme ir_black
+let g:solarized_degrade="1"
+set background=dark
+colorscheme solarized
 
 " Make Save leave edit mode
 " macmenu File.Save  key=<nop>
