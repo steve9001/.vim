@@ -10,25 +10,25 @@ These are my opinionated .vim settings.  I clone it to my home directory, then:
     $ cd ~/.vim
     $ git submodule add <git-path-to-plugin> bundle/<plugin-name>
 
-## Note on jslint
+## Note on jshint
 
-Here is what I have in my ~/.jslintrc
+Here is what I have in my ~/.jshintrc
 
-    /*jslint devel: true, node: true, indent: 2 */
+    /* jshint forin:true, noarg:true, noempty:true, eqeqeq:true, laxbreak:true, bitwise:true, strict:false, undef:true, curly:true, devel:true, es5:true, node:true, indent:2, maxerr:50, newcap:true, asi:true, eqeqeq:false */
+    /*global exports:true */
 
 ## Plugins included:
 
-* http://github.com/tpope/vim-rails.git
-* http://github.com/tpope/vim-cucumber.git
-* http://github.com/scrooloose/nerdtree.git
-* http://github.com/scrooloose/nerdcommenter.git
-* http://github.com/tpope/vim-surround.git
+* http://github.com/tpope/vim-rails
+* http://github.com/tpope/vim-cucumber
+* http://github.com/scrooloose/nerdtree
+* http://github.com/scrooloose/nerdcommenter
+* http://github.com/tpope/vim-surround
 * http://github.com/tpope/vim-endwise
 * http://github.com/tpope/vim-haml
-* http://github.com/tpope/vim-fugitive.git
-* http://github.com/mileszs/ack.vim.git
+* http://github.com/tpope/vim-fugitive
+* http://github.com/mileszs/ack.vim
 * http://github.com/altercation/vim-colors-solarized
-* http://github.com/kchmck/vim-coffee-script.git
-* http://github.com/pangloss/vim-javascript.git
-* http://github.com/sleistner/vim-jslint.git
-
+* http://github.com/kchmck/vim-coffee-script
+* http://github.com/pangloss/vim-javascript
+* https://github.com/sleistner/vim-jshint
