@@ -2,10 +2,10 @@ set enc=utf-8
 
 let s:os_type = system("uname")
 if s:os_type =~ "^Darwin"
- set gfn=Monaco:h16
- set fuopt+=maxhorz " grow to max horizontal width in fullscreen mode
+  set gfn=Menlo:h16
+  set fuopt+=maxhorz " grow to max horizontal width in fullscreen mode
 elseif s:os_type =~ "^Linux"
- set gfn=Monospace\ 14
+  set gfn=Monospace\ 14
 endif
 
 " Theme
