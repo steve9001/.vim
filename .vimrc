@@ -44,6 +44,7 @@ set splitright
 "autocmd BufWritePre * :%s/\s\+$//e
 
 " recognize Capfile, Gemfile, treetop
+autocmd BufRead,BufNewFile *.ru set filetype=ruby
 autocmd BufRead,BufNewFile Capfile set filetype=ruby
 autocmd BufRead,BufNewFile Gemfile set filetype=ruby
 autocmd BufRead,BufNewFile *.treetop set filetype=treetop
@@ -203,3 +204,5 @@ set laststatus=2
 "   %) end of width specification
 set statusline=%{fugitive#statusline()}
 set statusline+=%<\ %n:%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
+
+
