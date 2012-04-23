@@ -24,4 +24,4 @@ These are my opinionated .vim settings.  I clone it to my home directory, then:
 * http://github.com/altercation/vim-colors-solarized
 * http://github.com/kchmck/vim-coffee-script
 * http://github.com/pangloss/vim-javascript
-* https://github.com/sleistner/vim-jshint
+* http://github.com/groenewege/vim-less
