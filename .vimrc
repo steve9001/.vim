@@ -17,8 +17,13 @@ let mapleader = ","
 set wrap
 
 " Highlight the line the cursor is on
-set cursorline
+set term=xterm-256color
+set background=dark
+colorscheme ir_black
 
+set cursorline
+hi CursorLine none ctermbg=234
+ 
 " Show possible command line completions
 set wildmenu
 set wildmode=list:longest
@@ -205,4 +210,4 @@ set laststatus=2
 set statusline=%{fugitive#statusline()}
 set statusline+=%<\ %n:%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
 
-
+set backspace=indent,eol,start
