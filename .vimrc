@@ -206,3 +206,4 @@ set statusline=%{fugitive#statusline()}
 set statusline+=%<\ %n:%f\ %m%r%y%=%-35.(line:\ %l\ of\ %L,\ col:\ %c%V\ (%P)%)
 
 
+colorscheme jellybeans
