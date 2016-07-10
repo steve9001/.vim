@@ -9,7 +9,6 @@ elseif s:os_type =~ "^Linux"
 endif
 
 set bg=dark
-colorscheme jellybeans
 
 " Make Save leave edit mode
 " macmenu File.Save  key=<nop>
